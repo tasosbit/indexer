@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/algorand/go-algorand-sdk/v2/protocol/config"
+	"github.com/tasosbit/go-algorand-sdk/v2/protocol/config"
 	sdk "github.com/algorand/go-algorand-sdk/v2/types"
 )
 

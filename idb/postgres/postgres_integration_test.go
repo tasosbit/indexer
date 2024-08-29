@@ -30,7 +30,7 @@ import (
 	"github.com/algorand/indexer/v3/util/test"
 
 	"github.com/algorand/go-algorand-sdk/v2/encoding/json"
-	"github.com/algorand/go-algorand-sdk/v2/protocol"
+	"github.com/tasosbit/go-algorand-sdk/v2/protocol"
 	"github.com/algorand/go-codec/codec"
 )
 
