@@ -32,8 +32,6 @@ import (
 	itypes "github.com/algorand/indexer/v3/types"
 	"github.com/algorand/indexer/v3/util"
 
-	"github.com/tasosbit/go-algorand-sdk/v2/protocol"
-	"github.com/tasosbit/go-algorand-sdk/v2/protocol/config"
 	sdk "github.com/algorand/go-algorand-sdk/v2/types"
 )
 

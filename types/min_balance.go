@@ -2,7 +2,9 @@ package types
 
 import (
 	"github.com/tasosbit/go-algorand-sdk/v2/protocol/config"
+
 	sdk "github.com/algorand/go-algorand-sdk/v2/types"
+	"github.com/tasosbit/go-algorand-sdk/v2/protocol/config"
 )
 
 // stateSchemaMinBalance computes the MinBalance requirements for a StateSchema

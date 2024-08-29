@@ -8,8 +8,6 @@ import (
 	"github.com/algorand/indexer/v3/util"
 
 	"github.com/algorand/go-algorand-sdk/v2/encoding/msgpack"
-	"github.com/tasosbit/go-algorand-sdk/v2/protocol"
-	"github.com/tasosbit/go-algorand-sdk/v2/protocol/config"
 	sdk "github.com/algorand/go-algorand-sdk/v2/types"
 )
 
