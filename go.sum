@@ -679,8 +679,8 @@ github.com/stretchr/testify v1.8.2 h1:+h33VjcLVPDHtOdpUCuF+7gSuG3yGIftsP1YvFihtJ
 github.com/stretchr/testify v1.8.2/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
 github.com/subosito/gotenv v1.2.0 h1:Slr1R9HxAlEKefgq5jn9U+DnETlIUa6HfgEzj0g5d7s=
 github.com/subosito/gotenv v1.2.0/go.mod h1:N0PQaV/YGNqwC0u51sEeR/aUtSLEXKX9iv69rRypqCw=
-github.com/tasosbit/go-algorand-sdk/v2 v2.6.0-fnet3 h1:/4/+emIGRRpNMSxvXJsLJZyU01lzetz9FFmPBJLQoDg=
-github.com/tasosbit/go-algorand-sdk/v2 v2.6.0-fnet3/go.mod h1:4ayerzjoWChm3kuVhbgFgURTbaYTtlj0c41eP3av5lw=
+github.com/tasosbit/go-algorand-sdk/v2 v2.6.0-fnet4 h1:AeRpSKKhKe8gNwYqZ2KCco5Ir+j8Pka4Ghu7ksm0Kdo=
+github.com/tasosbit/go-algorand-sdk/v2 v2.6.0-fnet4/go.mod h1:4ayerzjoWChm3kuVhbgFgURTbaYTtlj0c41eP3av5lw=
 github.com/tmc/grpc-websocket-proxy v0.0.0-20170815181823-89b8d40f7ca8/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=
 github.com/tv42/httpunix v0.0.0-20150427012821-b75d8614f926/go.mod h1:9ESjWnEqriFuLhtthL60Sar/7RFoluCcXsuvEwTV5KM=
 github.com/uber/jaeger-client-go v2.25.0+incompatible/go.mod h1:WVhlPFC8FDjOFMMWRy2pZqQJSXxYSwNYOkTr/Z6d3Kk=
