@@ -18,13 +18,13 @@ import (
 	"github.com/algorand/indexer/v3/idb"
 )
 
-// ExtraOptions are options which change the behavior or the HTTP server.
+// ExtraOptions are options which change the behavior of the HTTP server.
 type ExtraOptions struct {
 	// Tokens are the access tokens which can access the API.
 	Tokens []string
 
-	// DeveloperMode turns on features like AddressSearchRoundRewind
-	DeveloperMode bool
+	// Respond to Private Network Access preflight requests sent to the indexer.
+	EnablePrivateNetworkAccessHeader bool
 
 	// MetricsEndpoint turns on the /metrics endpoint for prometheus metrics.
 	MetricsEndpoint bool
@@ -104,6 +104,9 @@ func Serve(ctx context.Context, serveAddr string, db idb.IndexerDb, dataError fu
 	}
 
 	e.Use(middlewares.MakeLogger(log))
+	if options.EnablePrivateNetworkAccessHeader {
+		e.Use(middlewares.MakePNA())
+	}
 	e.Use(middleware.CORS())
 	e.Use(middleware.GzipWithConfig(middleware.GzipConfig{
 		// we currently support compressed result only for GET /v2/blocks/ API
@@ -133,13 +136,12 @@ func Serve(ctx context.Context, serveAddr string, db idb.IndexerDb, dataError fu
 	}
 
 	api := ServerImplementation{
-		EnableAddressSearchRoundRewind: options.DeveloperMode,
-		db:                             db,
-		dataError:                      dataError,
-		timeout:                        options.handlerTimeout(),
-		log:                            log,
-		disabledParams:                 disabledMap,
-		opts:                           options,
+		db:             db,
+		dataError:      dataError,
+		timeout:        options.handlerTimeout(),
+		log:            log,
+		disabledParams: disabledMap,
+		opts:           options,
 	}
 
 	generated.RegisterHandlers(e, &api, middleware...)
