@@ -105,3 +105,5 @@ require (
 	gopkg.in/ini.v1 v1.66.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
+
+replace github.com/algorand/go-algorand-sdk/v2 => github.com/tasosbit/go-algorand-sdk/v2 v2.11.1-fnet5
